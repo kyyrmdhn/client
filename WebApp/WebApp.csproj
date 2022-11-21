@@ -1,0 +1,118 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\js\department.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\js\department.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\department.js" />
+    <None Include="wwwroot\lib\swal\dist\sweetalert2.all.js" />
+    <None Include="wwwroot\lib\swal\dist\sweetalert2.all.min.js" />
+    <None Include="wwwroot\lib\swal\dist\sweetalert2.js" />
+    <None Include="wwwroot\lib\swal\dist\sweetalert2.min.js" />
+    <None Include="wwwroot\lib\swal\LICENSE" />
+    <None Include="wwwroot\lib\swal\README.md" />
+    <None Include="wwwroot\lib\swal\src\buttons-handlers.js" />
+    <None Include="wwwroot\lib\swal\src\constants.js" />
+    <None Include="wwwroot\lib\swal\src\globalState.js" />
+    <None Include="wwwroot\lib\swal\src\instanceMethods.js" />
+    <None Include="wwwroot\lib\swal\src\instanceMethods\close.js" />
+    <None Include="wwwroot\lib\swal\src\instanceMethods\enable-disable-elements.js" />
+    <None Include="wwwroot\lib\swal\src\instanceMethods\getInput.js" />
+    <None Include="wwwroot\lib\swal\src\instanceMethods\hideLoading.js" />
+    <None Include="wwwroot\lib\swal\src\instanceMethods\progress-steps.js" />
+    <None Include="wwwroot\lib\swal\src\instanceMethods\update.js" />
+    <None Include="wwwroot\lib\swal\src\instanceMethods\validation-message.js" />
+    <None Include="wwwroot\lib\swal\src\instanceMethods\_destroy.js" />
+    <None Include="wwwroot\lib\swal\src\keydown-handler.js" />
+    <None Include="wwwroot\lib\swal\src\popup-click-handler.js" />
+    <None Include="wwwroot\lib\swal\src\privateMethods.js" />
+    <None Include="wwwroot\lib\swal\src\privateProps.js" />
+    <None Include="wwwroot\lib\swal\src\scss\_animations.scss" />
+    <None Include="wwwroot\lib\swal\src\scss\_body.scss" />
+    <None Include="wwwroot\lib\swal\src\scss\_core.scss" />
+    <None Include="wwwroot\lib\swal\src\scss\_mixins.scss" />
+    <None Include="wwwroot\lib\swal\src\scss\_theming.scss" />
+    <None Include="wwwroot\lib\swal\src\scss\_toasts-animations.scss" />
+    <None Include="wwwroot\lib\swal\src\scss\_toasts-body.scss" />
+    <None Include="wwwroot\lib\swal\src\scss\_toasts.scss" />
+    <None Include="wwwroot\lib\swal\src\staticMethods.js" />
+    <None Include="wwwroot\lib\swal\src\staticMethods\argsToParams.js" />
+    <None Include="wwwroot\lib\swal\src\staticMethods\bindClickHandler.js" />
+    <None Include="wwwroot\lib\swal\src\staticMethods\dom.js" />
+    <None Include="wwwroot\lib\swal\src\staticMethods\fire.js" />
+    <None Include="wwwroot\lib\swal\src\staticMethods\mixin.js" />
+    <None Include="wwwroot\lib\swal\src\staticMethods\showLoading.js" />
+    <None Include="wwwroot\lib\swal\src\staticMethods\timer.js" />
+    <None Include="wwwroot\lib\swal\src\SweetAlert.js" />
+    <None Include="wwwroot\lib\swal\src\sweetalert2.js" />
+    <None Include="wwwroot\lib\swal\src\sweetalert2.scss" />
+    <None Include="wwwroot\lib\swal\src\types.js" />
+    <None Include="wwwroot\lib\swal\src\utils\aria.js" />
+    <None Include="wwwroot\lib\swal\src\utils\classes.js" />
+    <None Include="wwwroot\lib\swal\src\utils\defaultInputValidators.js" />
+    <None Include="wwwroot\lib\swal\src\utils\DismissReason.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\animationEndEvent.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\domUtils.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\getters.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\index.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\init.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\inputUtils.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\measureScrollbar.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\parseHtmlToContainer.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\renderers\render.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\renderers\renderActions.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\renderers\renderCloseButton.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\renderers\renderContainer.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\renderers\renderContent.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\renderers\renderFooter.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\renderers\renderIcon.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\renderers\renderImage.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\renderers\renderInput.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\renderers\renderPopup.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\renderers\renderProgressSteps.js" />
+    <None Include="wwwroot\lib\swal\src\utils\dom\renderers\renderTitle.js" />
+    <None Include="wwwroot\lib\swal\src\utils\getTemplateParams.js" />
+    <None Include="wwwroot\lib\swal\src\utils\iosFix.js" />
+    <None Include="wwwroot\lib\swal\src\utils\isNodeEnv.js" />
+    <None Include="wwwroot\lib\swal\src\utils\openPopup.js" />
+    <None Include="wwwroot\lib\swal\src\utils\params.js" />
+    <None Include="wwwroot\lib\swal\src\utils\scrollbarFix.js" />
+    <None Include="wwwroot\lib\swal\src\utils\setParameters.js" />
+    <None Include="wwwroot\lib\swal\src\utils\Timer.js" />
+    <None Include="wwwroot\lib\swal\src\utils\utils.js" />
+    <None Include="wwwroot\lib\swal\src\variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Core" Version="1.6.0" />
+    <PackageReference Include="bootstrap" Version="5.2.2" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\lib\swal\sweetalert2.d.ts" />
+  </ItemGroup>
+
+</Project>

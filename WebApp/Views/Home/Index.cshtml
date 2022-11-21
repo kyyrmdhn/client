@@ -1,0 +1,44 @@
+﻿@model Api.Models.ResponseLogin
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+</head>
+<body>
+    <div class="card">
+    <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.Role)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.Role)
+        </dd>
+        <dd class = "col-sm-12">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="ChangePassword">Change Password</a>
+        </dd>
+    </dl>
+</div>
+</div>
+
+</body>
+</html>

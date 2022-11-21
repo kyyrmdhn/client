@@ -1,0 +1,135 @@
+﻿@{
+	Layout = "_AdminLayout";
+	ViewData["Title"] = "Department";
+}
+
+<div class="card">
+	<div class="container">
+		<h1>Department</h1>
+		<p><a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-create">Create New</a></p>
+
+		<!-- MODAL CREATE -->	
+		<div class="col-md-4">
+		<div class="modal fade" id="modal-create" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+			<div class="modal-content">
+			  <div class="modal-body p-0">
+				<div class="card card-plain">
+				  <div class="card-header pb-0 text-left">
+					<h3 class="font-weight-bolder text-info text-gradient">Create Department</h3>
+				  </div>
+				  <div class="card-body">
+					<form role="form text-left">
+					  <label>Nama</label>
+					  <div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Nama Department" aria-label="Nama" id="Name">
+					  </div>
+					  <label>Division Id</label>
+					  <div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Division Id" aria-label="DivisionId" id="divId">
+					  </div>
+					  <div class="text-center">
+						<button type="submit" class="btn btn-round bg-gradient-info btn-lg w-100 mt-4 mb-0" onclick="save()">Save</button>
+					  </div>
+					</form>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<!--MODAL EDIT-->
+	<div class="col-md-4">
+		<div class="modal fade" id="modal-edit" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+			<div class="modal-content">
+			  <div class="modal-body p-0">
+				<div class="card card-plain">
+				  <div class="card-header pb-0 text-left">
+					<h3 class="font-weight-bolder text-info text-gradient">Edit Department</h3>
+				  </div>
+				  <div class="card-body">
+					<form role="form text-left">
+					  <label>Nama</label>
+					  <div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Nama Department" aria-label="Nama" id="NameEdit">
+					  </div>
+					  <label>Division Id</label>
+					  <div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Division Id" aria-label="DivisionId" id="divIdEdit">
+					  </div>
+					  <div class="text-center">
+						<button type="submit" class="btn btn-round bg-gradient-info btn-lg w-100 mt-4 mb-0" onclick="editDepartment()">Update</button>
+					  </div>
+					</form>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	
+
+	<!-- Modal -->
+	<div class="modal fade" id="detail-department" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Detail</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			  <div class="row">
+				  <div class="col">
+					<p>Nama Department : </p>
+				  </div>
+				  <div class="col">
+					  <p id="nameDetail"></p>
+				  </div>
+			  </div>
+			  <div class="row">
+				<div class="col">
+					<p>Division Id : </p>
+				</div>
+				<div class="col">
+					<p id="divIdDetail"></p>
+				</div>
+			  </div>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="table-responsive">
+		<table class="table table-bordered align-items-center mb-0"  id="tableDepartment">
+			<thead>
+			<tr>
+				<th>No.</th>
+				<th>Nama</th>
+				<th>Division Id</th>
+				<th>Action</th>
+			</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+	</div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/swal/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.1/b-2.3.3/b-colvis-2.3.3/b-html5-2.3.3/datatables.min.js"></script>
+
+<script src="~/js/department.js"></script>
